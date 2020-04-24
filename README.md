@@ -38,9 +38,9 @@ puts wallet.generate_address
 - [ ] BTC and Derivations
   - [x] BTC
   - [x] LTC
-  - [ ] DOGE
-  - [ ] RDD
-  - [ ] DASH
+  - [x] DOGE
+  - [x] RDD
+  - [x] DASH
   - [ ] PPC
   - [ ] NMC
   - [ ] FTC
