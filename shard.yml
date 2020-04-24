@@ -4,6 +4,11 @@ version: 0.1.0
 authors:
   - Chris Watzon <cawatson1993@gmail.com>
 
+dependencies:
+  json_rpc:
+    github: watzon/json_rpc
+    branch: master
+
 crystal: 0.34.0
 
 license: MIT
