@@ -2,7 +2,7 @@ module Tomi
   module Wallet
     class BTC < BaseWallet
       getter version = 0x00
-      getter version_testnet = 0x6F
+      getter version_testnet = 0x6f
 
       def generate_keypair : KeyPair
         Crypto.ecdsa_keypair(LibCrypto::ECKeyCurve::Secp256k1)
@@ -10,7 +10,7 @@ module Tomi
 
       # https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses
       def generate_address(testnet = false) : String
-        version_byte = testnet && responds_to?(:version_testnet) ? version_testnet.chr : version.chr
+        version_byte = testnet ? version_testnet.chr : version.chr
         step_one = @keypair.public_key.to_s(16).rjust(130, '0').hexbytes
         step_two = Crypto.hash_sha(step_one)
         step_three = Crypto.hash_ripemd(step_two)

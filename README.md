@@ -41,13 +41,11 @@ puts wallet.generate_address
   - [x] DOGE
   - [x] RDD
   - [x] DASH
-  - [ ] PPC
-  - [ ] NMC
-  - [ ] FTC
-  - [ ] XCP
-  - [ ] BLK
+  - [x] PPC
+  - [x] NMC
+  - [x] BLK
   - [ ] NSR
-  - [ ] NBT
+  - [x] NBT
   - [ ] MZC
   - [ ] VIA
   - [ ] XCH
@@ -56,7 +54,7 @@ puts wallet.generate_address
   - [ ] DGC
   - [ ] CCN
   - [ ] DGB
-  - [ ] MONA
+  - [x] MONA
   - [ ] CLAM
   - [ ] XPM
   - [ ] NEOS
@@ -77,7 +75,6 @@ puts wallet.generate_address
   - [ ] AC
   - [ ] BTCD
   - [ ] TPC
-  - [ ] ETH
   - [ ] OK
   - [ ] DOGED
   - [ ] EFL
@@ -87,6 +84,7 @@ puts wallet.generate_address
   - [ ] ZEC
   - [ ] XTZ
 - [ ] Ether Based
+  - [x] ETH
 - [ ] SushiChain
 
 

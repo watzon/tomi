@@ -2,8 +2,8 @@ require "./btc"
 
 module Tomi
   module Wallet
-    class LTC < BTC
-      getter version = 0x30
+    class DGB < BTC
+      getter version = 0x1e
       getter version_testnet = 0x6f
     end
   end

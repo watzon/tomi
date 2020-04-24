@@ -24,6 +24,12 @@ module Tomi
       sha256.digest
     end
 
+    def self.hash_sha3(data, size = 256)
+      ripemd = OpenSSL::Digest.new("SHA3-#{size}")
+      ripemd << data
+      ripemd.digest
+    end
+
     def self.hash_ripemd(data, size = 160)
       ripemd = OpenSSL::Digest.new("RIPEMD#{size}")
       ripemd << data
