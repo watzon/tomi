@@ -31,6 +31,65 @@ puts wallet.generate_address
 # => 1EyM8rAJTDBQRimbnnzSThfvr4PigPQJZD
 ```
 
+## Progress
+
+<!-- https://github.com/libbitcoin/libbitcoin-system/wiki/Altcoin-Version-Mappings#bip44-altcoin-version-mapping-table -->
+
+- [ ] BTC and Derivations
+  - [x] BTC
+  - [x] LTC
+  - [ ] DOGE
+  - [ ] RDD
+  - [ ] DASH
+  - [ ] PPC
+  - [ ] NMC
+  - [ ] FTC
+  - [ ] XCP
+  - [ ] BLK
+  - [ ] NSR
+  - [ ] NBT
+  - [ ] MZC
+  - [ ] VIA
+  - [ ] XCH
+  - [ ] RBY
+  - [ ] GRS
+  - [ ] DGC
+  - [ ] CCN
+  - [ ] DGB
+  - [ ] MONA
+  - [ ] CLAM
+  - [ ] XPM
+  - [ ] NEOS
+  - [ ] JBS
+  - [ ] ZRC
+  - [ ] VTC
+  - [ ] NXT
+  - [ ] MUE
+  - [ ] ZOOM
+  - [ ] VPN
+  - [ ] CDN
+  - [ ] SDC
+  - [ ] PKB
+  - [ ] PND
+  - [ ] START
+  - [ ] GCR
+  - [ ] NVC
+  - [ ] AC
+  - [ ] BTCD
+  - [ ] TPC
+  - [ ] ETH
+  - [ ] OK
+  - [ ] DOGED
+  - [ ] EFL
+  - [ ] POT
+  - [ ] XRP
+  - [ ] XMR
+  - [ ] ZEC
+  - [ ] XTZ
+- [ ] Ether Based
+- [ ] SushiChain
+
+
 ## Contributing
 
 1. Fork it (<https://github.com/watzon/tomi/fork>)
