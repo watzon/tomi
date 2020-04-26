@@ -8,6 +8,12 @@ dependencies:
   json_rpc:
     github: watzon/json_rpc
     branch: master
+  qrencode:
+    github: woodruffw/qrencode.cr
+    branch: master
+  stumpy_png:
+    github: stumpycr/stumpy_png
+    branch: master
 
 crystal: 0.34.0
 

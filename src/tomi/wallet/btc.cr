@@ -1,6 +1,6 @@
 module Tomi
   module Wallet
-    class BTC < BaseWallet
+    class BTC < Wallet::Base
       getter version = 0x00
       getter version_testnet = 0x6f
 
@@ -9,7 +9,7 @@ module Tomi
       end
 
       # https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses
-      def generate_address(testnet = false) : String
+      def generate_address(testnet = false) : Address
         version_byte = testnet ? version_testnet.chr : version.chr
         step_one = @keypair.public_key.to_s(16).rjust(130, '0').hexbytes
         step_two = Crypto.hash_sha(step_one)
@@ -20,7 +20,7 @@ module Tomi
         step_seven = step_six[0, 4]
         step_eight = Crypto.append_bytes(step_four, step_seven)
         step_nine = Crypto.base58_check(step_eight.hexstring)
-        step_nine
+        Address.new(step_nine, self, testnet)
       end
     end
   end
